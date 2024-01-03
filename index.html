@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Blog</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="searchArea">
+            <input type="text" id="searchBox" placeholder="Pesquisar por título...">
+            <button id="searchButton">Pesquisar</button>
+            <div id="postCount">0 post(s) encontrado(s)</div>
+        </div>
+
+        <div id="posts">
+            <!-- Os posts serão injetados aqui pelo TypeScript -->
+        </div>
+
+        <div id="newPostArea">
+            <input type="text" id="newPostTitle" placeholder="Título do novo post">
+            <textarea id="newPostBody" placeholder="Corpo do novo post"></textarea>
+            <button id="submitPost">Criar Post</button>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+
+</body>
+</html>
